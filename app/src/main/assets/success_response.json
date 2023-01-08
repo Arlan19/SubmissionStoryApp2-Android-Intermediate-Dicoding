@@ -1,0 +1,15 @@
+{
+  "error": false,
+  "message": "Stories fetched successfully",
+  "listStory": [
+    {
+      "id": "story-s567F4-eBLtCfh5J",
+      "name": "a",
+      "description": "maps checkk\n",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650600183864_zT_4ToxE.jpg",
+      "createdAt": "2022-04-22T04:03:03.870Z",
+      "lat": -6.2174907,
+      "lon": 106.850555
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+Skenario Pengujian
+Submission 2 Belajar Aplikasi Android Intermediate
+
+Unit Testing
+
+
+>>>>>>>>> LoginViewModelTest <<<<<<<<<<<
+1. when Login is successfully return Result Success
+	> memastikan mengembalikan nilai Succes 
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method login dapat dipanggil
+2. when is Failed return Result Failed
+	> memastikan mengembalikan nilai Failed 
+	> memastikan data null ketika gagal
+	> memastikan method login dapat dipanggil
+
+
+>>>>>>>>> MainViewModelTest <<<<<<<<<<<
+1. when open Main Get stories success
+	> memastikan token tersimpan
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method getStories dapat dipanggil
+
+>>>>>>>>> MapsViewModelTest <<<<<<<<<<<
+1. when Get location story is successfully return NetworkResult Success
+	> memastikan mengembalikan nilai Succes 
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method getStoriesLocation dapat dipanggil
+2. when Get location story is failed rerturn NetworkResult Error
+	> memastikan mengembalikan nilai Failed 
+	> memastikan data null ketika gagal
+	> memastikan method getStoriesLocation dapat dipanggil
+
+>>>>>>>>> RegisterViewModelTest <<<<<<<<<<<
+1. when Register is successfully return Result Success
+	> memastikan mengembalikan nilai Succes 
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method register dapat dipanggil
+2. when Register is Failed return Result Failed
+	> memastikan mengembalikan nilai Failed 
+	> memastikan data null ketika gagal
+	> memastikan method register dapat dipanggil
+
+
+>>>>>>>>> StoryViewModelTest <<<<<<<<<<<
+1. Upload file successfully
+	> memastikan upload file berjalan dengan baik
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method uploadStory dapat dipanggil
+
+2. Upload file Failed
+	> memastikan upload file gagal berjalan dengan baik
+	> memastikan data dummy tidak sesuai dengan data sebenarnya
+
+
+>>>>>>>>> RepositoryTest <<<<<<<<<<<
+- test Method Login 
+1. when Login successfully
+	> memastikan mengembalikan nilai Succes 
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method login dapat dipanggil
+2. when Login Failed
+	> memastikan mengembalikan nilai Failed 
+	> memastikan data null ketika gagal
+	> memastikan method login dapat dipanggil
+- test Method Register
+3. when Register successfully
+	> memastikan mengembalikan nilai Succes 
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method register dapat dipanggil
+4. when Register failed
+	> memastikan mengembalikan nilai Failed 
+	> memastikan data null ketika gagal
+	> memastikan method register dapat dipanggil
+- test Method Story
+5. when Upload image file return successfully
+	> memastikan upload file berjalan dengan baik
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method uploadStory dapat dipanggil
+6. when Upload image file throw exception
+	> memastikan upload file gagal berjalan dengan baik
+	> memastikan data dummy tidak sesuai dengan data sebenarnya
+
+>>>>>>>>> StoryRepositoryTest <<<<<<<<<<<
+- test Method getStories
+1. when Get stories with pager return successfully
+	> memastikan token tersimpan
+	> memastikan data tidak null
+	> memastikan data dummy sesuai dengan data sebenarnya
+	> memastikan method getStories dapat dipanggil
+
+
+==========================================================================================
+
+==========================================================================================
+
+
+Intrumentation Test
+
+>>>>>>>>> MainActivityTest <<<<<<<<<<<
+
+1. launchMainActivity_Success
+	> Memastikan response name sesuai
+	> Melakukan check RecyclerView muncul atau tidak
+2. launchMainActivity_ToMapActivity
+	> Memastikan response name sesuai
+	> Memastikan fab_maps muncul atau tidak
+	> Melakukan action click pada menu_maps
